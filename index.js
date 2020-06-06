@@ -1,4 +1,5 @@
 // Add your code here
+<<<<<<< HEAD
 function submitData( name, email ) {
     return fetch( 'http://localhost:3000/users', {
         method: "POST",
@@ -21,3 +22,16 @@ function submitData( name, email ) {
         document.body.innerHTML = error.message
       } )
   }
+=======
+fetch("http://localhost:3000/dogs", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+    "Accept": "application/json"
+  },
+  body: JSON.stringify({
+    dogName: "Byron",
+    dogBreed: "Poodle"
+  })
+});
+>>>>>>> ad957e7e61eb0bfdf37c21093874900ff70fd5cd
